@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+/* medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+/* large */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+/* Start Sigen */
+
+.cards {
+    min-height: 100vh;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .container {
+    height: 100%;
+}
+
+.cards .container .holder {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.cards .container .holder .text {
+    color: hsl(234, 12%, 34%);
+    text-align: center;
+}
+
+.cards .container .holder .text h2 {
+    font-size: 2.5rem;
+}
+
+@media (max-width:991px) {
+    .cards .container .holder .text h2 {
+        font-size: 1.48rem;
+        margin-bottom: 15px;
+    }
+}
+
+.cards .container .holder .text h2:last-of-type {
+    font-weight: normal;
+    font-size: 2.9rem;
+}
+
+@media (max-width:991px) {
+    .cards .container .holder .text h2:last-of-type {
+        font-size: 1.7rem;
+    }
+}
+
+.cards .container .holder .text p {
+    font-size: 16px;
+    width: 58%;
+    margin: 20px auto 0 auto;
+    line-height: 1.6;
+}
+
+@media (max-width:767px) {
+    .cards .container .holder .text p {
+        width: auto;
+        font-size: 17px;
+    }
+}
+
+.cards .container .holder .cells {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+@media(max-width:991px) {
+    .cards .container .holder .cells {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cards .container .holder .cells .cell {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+}
+
+.cards .container .holder .cells .cell .box {
+    background: white;
+    color: hsl(229, 6%, 66%);
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: right;
+    box-shadow: 0 11px 16px 0px rgba(0, 0, 0, 25%);
+    border-top: 7px solid hsl(212, 86%, 64%);
+}
+
+.cards .container .holder .cells .cell:nth-child(1) .box {
+    border-color: hsl(0, 78%, 62%);
+}
+
+.cards .container .holder .cells .cell:nth-child(2) .box:first-of-type {
+    border-color: hsl(180, 62%, 55%);
+}
+
+.cards .container .holder .cells .cell:nth-child(2) .box:last-of-type {
+    border-color: hsl(34, 97%, 64%);
+}
+
+.cards .container .holder .cells .cell .box h2 {
+    font-size: 1.5rem;
+    padding: 20px 0;
+    text-align: left;
+    color: hsl(234, 12%, 34%);
+}
+
+.cards .container .holder .cells .cell .box p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.cards .container .holder .cells .cell .box .image {}
+
+.cards .container .holder .cells .cell .box .image img {
+    padding: 10px 0;
+}

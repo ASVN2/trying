@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    -ms-overflow-style: none;
+    background-image: url("images/bg-desktop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* min-height: 100vh; */
+    background-color: #0c122c;
+    color: #fffffd;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: bottom;
+}
+
+@media (max-width:497px) {
+    body {
+        background-image: url("images/bg-mobile.png");
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* small */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+/* medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+/* large */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+/* Start fylo  */
+
+.fylo .container {
+    display: flex;
+    gap: 70px;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+@media(max-width:991px) {
+    .fylo .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.fylo .container .box {
+    background-color: #1d2b68;
+    background-color: #1d2b68;
+    padding: 3rem 3.5rem;
+    padding-right: 3.5rem;
+    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-right-radius: 6rem;
+    padding-right: 8rem;
+}
+
+@media(max-width:787px) {
+    .fylo .container .box {
+        padding-right: 5rem;
+    }
+}
+
+@media(max-width:375px) {
+    .fylo .container .box {
+        padding-right: 3rem;
+    }
+}
+
+.fylo .container .box .icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.fylo .container .box .icons a {
+    background-color: #0c112e;
+    border-radius: 10px;
+    width: 49px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fylo .container .box:last-child {
+    position: relative;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding-right: 20px;
+    flex: 1;
+}
+
+.fylo .container .box .amount {
+    position: absolute;
+    top: -43px;
+    right: 40px;
+    color: #0b1129;
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fylo .container .box .amount::before {
+    content: " ";
+    content: " ";
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    border-style: solid;
+    border-width: 25px;
+    border-color: transparent white transparent transparent;
+}
+
+.fylo .container .box .amount>span {
+    font-size: 15px;
+    font-weight: normal;
+    color: #a4a5aa;
+}
+
+.fylo .container .box p {
+    padding: 10px 0;
+    font-weight: normal;
+    font-size: 1.03rem;
+    color: #a4a5aa;
+}
+
+.fylo .container .box p>span {
+    color: white;
+    font-weight: bold;
+}
+
+.fylo .container .box .holder {
+    position: relative;
+    margin: 20px 0;
+    height: 20px;
+    background-color: #151d48;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.fylo .container .box .holder::before {
+    content: "0 GB";
+    bottom: -30px;
+    position: absolute;
+    left: 0;
+    font-size: 15px;
+    color: white;
+}
+
+.fylo .container .box .holder::after {
+    content: "1000 GB";
+    bottom: -30px;
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+    color: white;
+}
+
+.fylo .container .box .line {
+    width: 100%;
+    position: absolute;
+    height: 70%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-image: linear-gradient( to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    margin-left: 2.5px;
+}
+
+.fylo .container .box .line::before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    top: 0;
+    right: 2px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* End fylo  */

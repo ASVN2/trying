@@ -1,0 +1,222 @@
+/* Start Globale Rules  */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    -ms-overflow-style: none;
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --main-heading: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* small */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+
+/* medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+/* large */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+/* End Globale Rules */
+
+
+/* Start boxing */
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media (max-width:991px) {
+    .card {
+        height: auto;
+    }
+}
+
+.card .container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@media (max-width:991px) {
+    .card .container {
+        flex-direction: column-reverse;
+        min-width: 300px;
+        padding: 0 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+.card .container .box.text {
+    padding: 60px 80px;
+    flex-basis: 50%;
+    background-color: var(--card-background);
+    /* height: 100%; */
+}
+
+@media (max-width:767px) {
+    .card .container .box.text {
+        padding: 10px 20px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+.card .container .box.text h2 {
+    color: var(--main-heading);
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.card .container .box.text h2>span {
+    color: var(--accent);
+}
+
+.card .container .box.text p {
+    line-height: 1.7;
+    padding: 20px 0;
+    color: var(--main-paragraph);
+}
+
+.card .container .box.text ul {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:767px) {
+    .card .container .box.text ul {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.card .container .box.text li {}
+
+.card .container .box.text li span {
+    display: block;
+}
+
+.card .container .box.text li span.number {
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.card .container .box.text li span.title {
+    text-transform: uppercase;
+    color: var(--stat-headings);
+    letter-spacing: 1.7px;
+    font-size: 13px;
+}
+
+@media (max-width:767px) {
+    .card .container .box.text li span.title {
+        padding-top: 10px;
+    }
+}
+
+.card .container .box.image {
+    flex-basis: 50%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media (max-width:991px) {
+    .card .container .box.image {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.card .container .box.image img {
+    width: 100%;
+}
+
+.card .container .box.image::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent);
+    opacity: .6;
+}
+
+
+/* End Boxing */

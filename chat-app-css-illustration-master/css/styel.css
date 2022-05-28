@@ -1,0 +1,441 @@
+    /* Start Globale Rules  */
+    
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Cairo', sans-serif;
+        -ms-overflow-style: none;
+        background-color: #fafafa;
+        color: black;
+        height: 100vh;
+        position: relative;
+    }
+    
+    body::before {
+        content: " ";
+        width: 40rem;
+        height: 55rem;
+        top: 0;
+        left: -10rem;
+        position: absolute;
+        z-index: -1;
+        border-bottom-left-radius: 48%;
+        border-bottom-right-radius: 48%;
+        background-image: linear-gradient(to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        -moz-background-image: linear-gradient(to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        -webkit-background-image: linear-gradient(to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    }
+    
+    @media (max-width:991px) {
+        body::before {
+            width: 31rem;
+            height: 41rem;
+        }
+    }
+    
+    @media (max-width:787px) {
+        body::before {
+            width: 23rem;
+            height: 41rem;
+        }
+    }
+    
+    body::after {
+        content: " ";
+        width: 40rem;
+        height: 45rem;
+        bottom: 0;
+        right: -6rem;
+        position: absolute;
+        z-index: -1;
+        border-top-left-radius: 48%;
+        border-top-right-radius: 48%;
+        background-image: linear-gradient(to bottom, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        -moz-background-image: linear-gradient(to bottom, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        -webkit-background-image: linear-gradient(to bottom, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        opacity: 5%;
+    }
+    
+    @media (max-width:991px) {
+        body::after {
+            width: 36rem;
+            height: 38rem;
+            right: -13rem;
+        }
+    }
+    
+    @media (max-width:787px) {
+        body::after {
+            width: 26rem;
+            height: 28rem;
+            right: -13rem;
+        }
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* small */
+    
+    @media (min-width: 768px) {
+        .container {
+            width: 750px;
+        }
+    }
+    /* medium */
+    
+    @media (min-width: 992px) {
+        .container {
+            width: 970px;
+        }
+    }
+    /* large */
+    
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px;
+        }
+    }
+    /* Start head */
+    
+    .container {
+        display: flex;
+        align-content: center;
+        height: 100%;
+    }
+    
+    .container .holder {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    @media (max-width:991px) {
+        .container .holder {
+            flex-direction: column;
+            margin: 20px 0;
+        }
+    }
+    
+    .container .holder .phone {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 50px;
+        width: 370px;
+        box-shadow: 0 0 35px 9px #00000012;
+    }
+    
+    @media (max-width:400px) {
+        .container .holder .phone {
+            width: auto
+        }
+    }
+    
+    .container .holder .phone .screen {
+        background-color: #f5f3f8;
+        border-radius: 25px;
+        overflow: hidden;
+    }
+    
+    .container .holder .phone .screen .head {
+        display: flex;
+        justify-content: space-between;
+        background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        -moz-background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        -webkit-background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        padding: 40px 15px 20px 15px;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .container .holder .phone .screen .head::before {
+        content: " ";
+        position: absolute;
+        height: 40px;
+        width: 60%;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        background-color: white;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    
+    .container .holder .phone .screen .head .right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+    }
+    
+    .container .holder .phone .screen .head .right a img {
+        width: 12px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    
+    .container .holder .phone .screen .head .right>img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+    
+    .container .holder .phone .screen .head .right .title h3 {
+        margin: 0;
+        font-size: 13px;
+    }
+    
+    .container .holder .phone .screen .head .right .title span {
+        color: hsl(270, 7%, 64%);
+        font-size: 10px;
+    }
+    
+    .container .holder .phone .screen .head .left {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+    
+    .container .holder .phone .screen .head .left ul {
+        display: flex;
+        gap: 2px;
+        flex-direction: column;
+        gap: 2px;
+    }
+    
+    .container .holder .phone .screen .head .left ul li {
+        width: 3px;
+        height: 3px;
+        display: block;
+        background: white;
+        border-radius: 50%;
+    }
+    /* End head */
+    /* Start chat part one  */
+    
+    .container .holder .chat {
+        padding: 10px;
+    }
+    
+    .container .holder .chat p.msg-color {
+        font-size: 12px;
+        width: 60%;
+        color: hsl(276, 55%, 52%);
+        background: #ede4f4;
+        padding: 10px 10px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        border-bottom-left-radius: 5px;
+    }
+    /* End chat part one  */
+    /* start chat part two  */
+    
+    .container .holder .chat .part-two {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+    
+    .container .holder .chat .part-two .images {
+        display: flex;
+        gap: 10px;
+        padding: 5px 0;
+    }
+    
+    .container .holder .chat .part-two .images img {
+        width: 60px;
+        border-radius: 10px;
+    }
+    
+    .container .holder .chat .part-two .text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    
+    .container .holder .chat .part-two .text p {
+        font-size: 12px;
+        background: white;
+        width: fit-content;
+        padding: 15px 10px;
+        border-radius: 20px;
+        width: fit-content;
+        max-width: 70%;
+        box-shadow: 0 7px 17px 1px #00000013;
+        border-bottom-right-radius: 6px;
+        margin: 5px 0;
+    }
+    /* End chat part two  */
+    /* Start chat part three  */
+    
+    .container .holder .chat .part-three p:not(:first-child) {
+        background-image: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        -moz-background-image: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        -webkit-background-image: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        width: 80%;
+        border-radius: 10px;
+        padding: 15px 10px 15px 35px;
+        color: white;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    .container .holder .chat .part-three p:not(:first-child)::before {
+        content: " ";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid white;
+        top: 50%;
+        left: 15px;
+        border-bottom-left-radius: 2px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    
+    .container .holder .chat .part-three p>span {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+    /* End chat part three  */
+    /* End send  */
+    
+    .send {
+        padding: 10px;
+    }
+    
+    .send form {
+        background: white;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .send input:first-of-type {
+        outline: none;
+        border: none;
+        color: #fff;
+        padding: 15px 15px;
+        border-radius: 20px;
+        color: #c4c4c4;
+        font-size: 12px;
+        width: 90%;
+    }
+    
+    .send input:last-of-type {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        outline: none;
+        border: none;
+        background: hsl(271, 36%, 24%);
+        margin-right: 10px;
+    }
+    
+    .send input:last-of-type::before {
+        content: ' ';
+    }
+    
+    .send input:last-of-type:hover {
+        cursor: pointer;
+    }
+    /* End send  */
+    /* Start Text  */
+    
+    .texter {
+        width: 60%;
+    }
+    
+    @media (max-width:991px) {
+        .texter {
+            width: 80%;
+            text-align: center;
+        }
+    }
+    
+    .texter h1 {
+        color: #37204d;
+        font-size: 4rem;
+    }
+    
+    @media (max-width:991px) {
+        .texter h1 {
+            font-size: 3rem;
+        }
+    }
+    
+    @media (max-width:787px) {
+        .texter h1 {
+            font-size: 2rem;
+        }
+    }
+    
+    .texter p {
+        color: #c5c5c8;
+        font-size: 1.4rem;
+        line-height: 1.7;
+    }
+    
+    @media (max-width:787px) {
+        .texter p {
+            font-size: 1rem;
+            width: 80%;
+            margin: 0 auto 30px auto;
+        }
+    }
+    /* End Text  */
+    /* What I learn in this project  */
+    /*
+    + how to make liner background 
+    + How to make two thing in one p like price and title
+    + I can work do after and before on body
+
+    */

@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.conatiner {
+    padding: 0 15px;
+    position: relative;
+    min-height: 100vh;
+}
+
+.conatiner .card {
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    border-radius: 20px;
+    position: absolute;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media (max-width:375px) {
+    .conatiner .card {
+        width: 250px;
+    }
+}
+
+.conatiner .card img {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.conatiner .card .text {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.conatiner .card .text h2 {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: hsl(218, 44%, 22%);
+}
+
+@media (max-width:375px) {
+    .conatiner .card .text h2 {
+        font-size: 1.1rem;
+    }
+}
+
+.conatiner .card .text p {
+    line-height: 1.7;
+    font-weight: 500;
+    color: hsl(220, 15%, 55%);
+}
